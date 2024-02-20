@@ -1,5 +1,6 @@
 // abstract
 @import './abstract/variables';
+@import './abstract/mixins';
 
 //components
 
@@ -9,3 +10,4 @@
 
 // Pages
 @import './pages/home/hero';
+@import './pages/home/services';

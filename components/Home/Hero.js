@@ -18,11 +18,15 @@ export default function Hero () {
           </div>
         </section>
         <section className='col-lg-6 position-relative'>
-          <p className='hero__subtitle'>I design beautifully simple things, <br/> And I love what i do</p>
+          <p className='hero__subtitle'>
+            I design beautifully simple things, <br/> And I love what i do
+          </p>
           <figure className='hero__badge p-0'>
             <Image src={BADGE_KODEMIA} alt='Badge Kodemia' />
           </figure>
-          <Image src={IMG_JONATAN} width={300} height={430} alt='Foto Jonatan' className='hero__photo mx-auto' />
+          <div className='text-center'>
+            <Image src={IMG_JONATAN} width={300} height={430} alt='Foto Jonatan' className='hero__photo mx-auto' /> 
+          </div>
           <p className='d-none d-md-block'>FullStack JavaScript Developer</p>
         </section>
       </div>
