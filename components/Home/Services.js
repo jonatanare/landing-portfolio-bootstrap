@@ -1,5 +1,32 @@
 import React from 'react'
 
+const services = [
+  {
+    id: 1,
+    name: 'Web Development',
+    numberProjects: 20,
+    icon: 'icon-code.svg',
+    wrapperIconColor: '#00D394'
+
+  },
+  {
+    id: 2,
+    name: 'Diseño UX/UI',
+    numberProjects: 12,
+    icon: 'icon-ux-ui.svg',
+    wrapperIconColor: '#2DC9FF'
+
+  },
+  {
+    id: 3,
+    name: 'Marketing Digital',
+    numberProjects: 54,
+    icon: 'icon-laptop.svg',
+    wrapperIconColor: '#FFA71C'
+
+  }
+]
+
 export default function Services () {
   return (
     <section className='container-fluid services'>
@@ -8,14 +35,14 @@ export default function Services () {
           <div className="col-md-6 order-1 order-md-0">
             <div className='services__wrapper-items'>
               {
-                [1,2,3].map(index => (
-                  <section key={index} className='services__item'>
-                    <figure className='services__item-wrapper-icon'>
-                      <img src='/assets/icons/icon-code.svg' alt={`Icon ${index}`} className='services__item-icon' />
+                services.map((service) => (
+                  <section key={service.id} className='services__item'>
+                    <figure className='services__item-wrapper-icon' style={{backgroundColor: service.wrapperIconColor}}>
+                      <img src={`/assets/icons/${service.icon}`} alt={`Icon ${service.name}`} className='services__item-icon' />
                     </figure>
                     <div>
-                      <h3 className='services__item-title'>Web Development</h3>
-                      <p className='services__item-subtitle'>5 Projects</p>
+                      <h3 className='services__item-title'>{service.name}</h3>
+                      <p className='services__item-subtitle'>{service.numberProjects} Projects</p>
                       
                     </div>
                   </section>
