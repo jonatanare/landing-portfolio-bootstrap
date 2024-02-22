@@ -1,0 +1,169 @@
+.experiencies {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    &__title {
+        text-align: center;
+        color: #000;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+
+        @include responsive($md) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @include responsive($lg) {
+            font-size: 70px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__business {
+        margin-bottom: 131px;
+
+        &-name {
+            color: #000;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 16px;
+            @include responsive($lg) {
+                font-size: 30px;
+            }
+        }
+
+        &-date {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    &__timeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-wrapper-squere {
+            width: 36px;
+            height: 36px;
+            border: 1px dashed black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include responsive($md) {
+                width: 54px;
+                height: 54px;
+            }
+
+            @include responsive($lg) {
+                width: 76px;
+                height: 76px;
+            }
+            &-icon {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+
+                &--1{
+                    background-color: #1E7436;
+                }
+
+                &--2 {
+                    background-color: #2DC9FF;
+                }
+
+                &--3 {
+                    background-color: #FFA71C;
+                }
+
+                @include responsive($md) {
+                    width: 24px;
+                    height: 24px;
+                }
+                @include responsive($lg) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        &-divisor {
+
+            img {
+                @include responsive($lg) {
+                    height: 127px;
+                }
+            }
+        }
+    }
+
+    &__position {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            @include responsive($lg) {
+                font-size: 30px;
+                margin-bottom: 16px;
+            }
+        }
+
+        &-description {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px; /* 183.333% */
+            margin-bottom: 12px;
+            max-width: 275px;
+
+            @include responsive($md) {
+                font-size: 20px;
+                max-width: 497px;
+            }
+
+            @include responsive($lg) {
+                margin-bottom: 62px;
+            }
+        }
+
+        &-business {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 6px;
+
+            @include responsive($md) {
+                display: none;
+            }
+        }
+
+        &-date {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            @include responsive($md) {
+                display: none;
+            }
+        }
+    }
+}

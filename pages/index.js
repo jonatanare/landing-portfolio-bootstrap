@@ -1,6 +1,7 @@
 import Services from '@/components/Home/Services'
 import Hero from '@/components/Home/Hero'
 import Layout from '@/components/Layout'
+import Experiencies from '@/components/Home/Experiencies'
 
 export default function Home () {
   return (
@@ -8,6 +9,7 @@ export default function Home () {
       <main>
         <Hero />
         <Services />
+        <Experiencies />
       </main>
     </Layout>
   )
