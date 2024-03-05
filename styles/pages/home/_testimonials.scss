@@ -1,6 +1,7 @@
 .testimonials {
     background: #F8F7F1;
     padding: 36px 0 16px 0;
+    overflow: hidden;
 
     @include responsive($xl) {
         padding-top: 88px;
@@ -40,7 +41,7 @@
         padding-top: 35px;
         padding-bottom: 20px;
  
-        @include responsive($xxl) {
+        @include responsive($xl) {
             padding-bottom: 60px;
         }
     }
@@ -81,9 +82,14 @@
             width: 64px;
             height: 64px;
 
-            @include responsive($xxl) {
+            @include responsive($xl) {
                 width: 110px;
                 height: 110px;
+            }
+
+            @include responsive($xxl) {
+                width: 130px;
+                height: 130px;
             }
         }
 

@@ -32,13 +32,13 @@ export default function Experiencies() {
                         {
                             [1,2,3].map(index => (
                                 <>
-                                <div key={index} className='experiencies__timeline-wrapper-squere'>
-                                    <div className={`experiencies__timeline-wrapper-squere-icon experiencies__timeline-wrapper-squere-icon--${index}`}>
+                                    <div key={index} className='experiencies__timeline-wrapper-squere'>
+                                        <div className={`experiencies__timeline-wrapper-squere-icon experiencies__timeline-wrapper-squere-icon--${index}`}>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className='experiencies__timeline-divisor'>
-                                    <Image src={ICON_LINE} alt='Icon line' />
-                                </div>
+                                    <div className='experiencies__timeline-divisor'>
+                                        <Image src={ICON_LINE} alt='Icon line' />
+                                    </div>
                                 </>
                             ))
                         }
