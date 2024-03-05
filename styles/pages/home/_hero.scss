@@ -6,8 +6,40 @@
     height: 100%;
     overflow: hidden;
 
+    @include responsive($lg) {
+        height: 625px;
+    }
+
+    @include responsive($xxl) {
+        height: 768px;
+    }
+
+    &__photo {
+        
+        @include responsive($xl) {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
     &__container {
         margin-top: 54px;
+    }
+
+    &__email {
+        color: #FF7736;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; /* 146.154% */
+        text-decoration-line: underline;
+        text-transform: lowercase;
+
+        @include responsive($xl) {
+            font-size: 26px;
+        }
     }
 
     &__badge {
@@ -16,6 +48,13 @@
         height: 97px;
         right: 30px;
         top: 70px;
+
+        @include responsive($xl) {
+            width: 160px;
+            height: 160px;
+            top: auto;
+            bottom: 257px;
+        }
 
         img {
             width: 100%;
@@ -35,8 +74,8 @@
             }
             
             @include responsive($lg) {
-                font-size: 26px;
-                line-height: 38px; /* 146.154% */
+                font-size: 24px;
+                line-height: 32px;
             }
         }
     }
@@ -53,6 +92,12 @@
         @include responsive($md) {
             font-size: 54px;
         }
+
+        @include responsive($xl) {
+            margin-bottom: 75px;
+            font-size: 80px;
+            line-height: normal;
+        }
     }
 
     &__experiencies {
@@ -64,7 +109,12 @@
             display: flex;
             position: absolute;
             bottom: 220px;
+        }
 
+        @include responsive($xl) {
+            display: flex;
+            left: 0;
+            bottom: 207px;
         }
 
         &-year {
@@ -101,6 +151,12 @@
         
         @include responsive($md) {
             margin-bottom: 0;
+            text-align: end;
+        }
+
+        @include responsive($xl) {
+            font-size: 20px;
+            margin-left: auto;
         }
     }
 }

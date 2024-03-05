@@ -22,35 +22,35 @@ const projects = [
         id: 1,
         title: 'Academia Landrada',
         subtitle: 'Platform for training consultants',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-academy.png',
         color: '#00B451'
     },
     {
         id: 1,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-landrada.png',
         color: '#3AACFF'
     },
     {
         id: 1,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
-        color: '#3AACFF'
+        imageCover: '/assets/home/projects/img-movebike.png',
+        color: '#FE5F3B'
     },
     {
         id: 1,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
-        color: '#3AACFF'
+        imageCover: '/assets/home/projects/img-academy.png',
+        color: '#00B451'
     },
     {
         id: 1,
         title: 'Landing Page',
         subtitle: 'Investment Land Sales',
-        imageCover: '',
+        imageCover: '/assets/home/projects/img-landrada.png',
         color: '#3AACFF'
     }
 ]
@@ -58,8 +58,9 @@ const projects = [
 export default function Projects() {
   return (
     <section className='container-fluid projects'>
+        <div className="container-xl">
         <div className="row">
-            <div className="col-12 d-flex justify-content-between">
+            <div className="col-12 d-flex justify-content-between align-items-center">
                 <div>
                     <h2 className='projects__title'>Projects</h2>
                     <p className='projects__subtitle'>Perfect solutions for digital experience</p>
@@ -73,10 +74,10 @@ export default function Projects() {
                 <Swiper
                     spaceBetween={10}
                     slidesPerView={1.2}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    // }}
                     loop
                     modules={[Autoplay, Navigation]}
                     breakpoints={{
@@ -85,7 +86,7 @@ export default function Projects() {
                             spaceBetween: 20
                         },
                         1024: {
-                            slidesPerView: 4
+                            slidesPerView: 3
                         }
                     }}
                     className='projects__swiper'
@@ -108,6 +109,7 @@ export default function Projects() {
                         }
                 </Swiper>
             </div>
+        </div>
         </div>
     </section>
   )

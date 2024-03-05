@@ -33,9 +33,9 @@ export default function Footer () {
       </div>
       <hr className='footer__divisor' />
       <div className="row">
-        <div className="col-12 d-xl-flex justify-content-xl-between">
-          <Link href="/" className='footer__jonidev'>{'</Joni Dev>'}</Link>
-          <p className='text-center footer__devkoore'>Power By <a href="https://devkoore.com/" target='_blank'>DevKoore</a> <br className='d-xl-none' /> con <span>♥</span></p>
+        <div className="col-12 d-lg-flex justify-content-lg-between">
+          <Link href="/" className='footer__jonidev d-none d-lg-block'>{'</Joni Dev>'}</Link>
+          <p className='text-center footer__devkoore mb-0'>Power By <a href="https://devkoore.com/" target='_blank'>DevKoore</a> <br className='d-lg-none' /> con <span>♥</span></p>
         </div>
       </div>
     </footer>

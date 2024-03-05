@@ -14,6 +14,10 @@
             font-size: 40px;
         }
 
+        @include responsive($lg) {
+            font-size: 55px;
+        }
+
         @include responsive($xl) {
             font-size: 70px;
             margin-bottom: 18px;
@@ -26,6 +30,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 28px; /* 200% */
+
+        @include responsive($lg) {
+            font-size: 18px;
+        }
 
         @include responsive($xl) {
             font-size: 20px;
@@ -51,12 +59,14 @@
 
         border-radius: 6.566px;
         background: #FFF;
-
-        /* shadow-card-work */
         box-shadow: 34px 14px 54px 0px rgba(0, 0, 0, 0.12);
 
         @include responsive($md) {
             max-width: 300px;
+        }
+
+        @include responsive($lg) {
+            max-width: 400px;
         }
 
         @include responsive($xl) {
@@ -70,6 +80,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 0;
         }
 
         &-icon {
@@ -85,19 +96,20 @@
             line-height: normal;
 
             @include responsive($lg) {
-                font-size: 34px;
+                font-size: 24px;
             }
         }
 
         &-subtitle {
             color: #000;
-            font-size: 13.133px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-bottom: 0;
 
             @include responsive($md) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 

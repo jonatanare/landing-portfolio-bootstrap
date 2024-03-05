@@ -28,13 +28,13 @@ export default function Testimonials() {
                     slidesPerView: 2.5,
                     centeredSlides: true,
                     initialSlide: 2,
-                    spaceBetween: 40,
+                    spaceBetween: 100,
                     },
                     1440: {
                         slidesPerView: 3,
                         centeredSlides: true,
                         initialSlide: 3,
-                        spaceBetween: 50
+                        spaceBetween: 250
                     }
                 }}
 
@@ -45,7 +45,7 @@ export default function Testimonials() {
                         {({ isActive }) => (
                             <section className={`testimonials__card ${isActive ? 'active' : ''}`}>
                                 <Image src={AVATAR} alt='Avatar' className='testimonials__card-avatar' />
-                                <p className='testimonials__card-text'>I got a job that was in accordance with the salary and field of word. The process of submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word. </p>
+                                <p className='testimonials__card-text'>I got a job that was in accordance with the salary and field of word. The process of <br className='d-none d-lg-block' /> submitting an application was quite cosy. I got a job that was in accordance with the salary and field of word. </p>
                                 <hr className='testimonials__card-divisor' />
                                 <h3 className='testimonials__card-name'>John Allendone</h3>
                                 <h4 className='testimonials__card-position'>CEO MoveBike</h4>
