@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import AVATAR from '@/public/assets/home/avatar-1.png'
 import Image from 'next/image';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export default function Testimonials() {
+    const swiperRef = useRef(null)
+
   return (
     <section className='container-fluid testimonials'>
         <div className="row">
@@ -20,6 +25,7 @@ export default function Testimonials() {
         <div className="row">
             <div className="col-12">
             <Swiper
+                ref={swiperRef}
                 spaceBetween={50}
                 slidesPerView={1}
                 loop    
@@ -37,6 +43,9 @@ export default function Testimonials() {
                         spaceBetween: 250
                     }
                 }}
+                navigation
+                pagination={{ clickable: true }}
+                modules={[Navigation, Pagination]}
 
             >
             {
