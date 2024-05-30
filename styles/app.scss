@@ -1,7 +1,9 @@
 // abstract
 @import './abstract/variables';
+@import './abstract/mixins';
 
 //components
+@import './components/footer';
 
 // Utilities
 
@@ -9,3 +11,7 @@
 
 // Pages
 @import './pages/home/hero';
+@import './pages/home/services';
+@import './pages/home/projects';
+@import './pages/home/experiencies';
+@import './pages/home/testimonials';
